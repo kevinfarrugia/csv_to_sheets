@@ -7,6 +7,7 @@ A python script that uploads multiple CSV files into a Google Sheets spreadsheet
 The script adds a new sheet to an existent Google Sheets spreadsheet with the same name as the CSV file.
 
 - The Google Sheet needs to be created before running the script.
+- It will overwrite sheets with the same name.
 - It is _not_ possible to append multiple CSV files into a single sheet.
 
 ### Usage
