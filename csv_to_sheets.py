@@ -131,6 +131,10 @@ def main(argv):
             folder
         )
 
+        if len(files) == 0:
+            print("Folder does not include any CSV files.")
+            sys.exit(2)
+
         for path in files:
             # get the sheet name from the file name
             sheet_name = os.path.splitext(os.path.basename(path))[0]
