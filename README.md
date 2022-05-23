@@ -71,6 +71,10 @@ If the 403 message includes "Google Sheets API has not been used in project <PRO
 
 ![Screenshot of Google Cloud Platform with Google Sheets API configuration](./google_cloud_platform.png)
 
+#### I am receiving a HttpError 429
+
+This means that you are exceeding the 'Write requests per minute per user'. You can divide your CSV files into sub-folders and upload them in smaller batches.
+
 #### No such file or directory: 'credentials.json'
 
 Please confirm that you have a `credentials.json` file in the root directory of the script. To generate a `credentials.json` file, please look at the steps described earlier.
