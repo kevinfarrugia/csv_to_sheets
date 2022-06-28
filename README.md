@@ -87,6 +87,10 @@ The file `token.json` stores the user's access and refresh tokens, and is create
 
 You should delete the `token.json` file.
 
+#### When trying to authenticate, I get the error "'Credentials' object has no attribute 'to_json'"
+
+Use Python2 not Python3. 
+
 ## License and Copyright
 
 This software is released under the terms of the [MIT license](https://github.com/kevinfarrugia/csv_to_sheets/blob/main/LICENSE).
