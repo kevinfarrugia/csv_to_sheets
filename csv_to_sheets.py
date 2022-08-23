@@ -141,7 +141,7 @@ def main(argv):
 
             print("Preparing Sheets: " + sheet_name)
             sheet_id = get_sheet_id(spreadsheet, sheet_name)
-            if sheet_id > -1:
+            if sheet_id is not None:
                 delete_sheet(sheet_id)
             add_sheet(title=sheet_name)
 
@@ -155,7 +155,7 @@ def main(argv):
 
             print("Uploading: " + sheet_name)
             sheet_id = get_sheet_id(spreadsheet, sheet_name)
-            if sheet_id > -1:
+            if sheet_id is not None:
                 upload_csv(path, sheet_id)
 
     except HttpError as err:
