@@ -65,6 +65,10 @@ You may find more information on the [Sheets API](https://developers.google.com/
 
 ### FAQ
 
+#### I am receiving ('invalid_grant: Bad Request', {u'error_description': u'Bad Request', u'error': u'invalid_grant'})
+
+This is a generic error when the token has expired. If you have used this tool previously, you may have an old `token.json` file. Remove this and you will be asked to re-authorize your user.
+
 #### I am receiving a 403 error when running the script
 
 If the 403 message includes "Google Sheets API has not been used in project <PROJECT_ID> before or it is disabled." then you need to enable the [Google Sheets API](https://console.cloud.google.com/apis/library/sheets.googleapis.com) from the Gougle Cloud Platform for that project.
